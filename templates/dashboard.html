@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard QA - sonnya3</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f7f6; text-align: center; padding: 50px; }
+        .card { background: white; border-radius: 10px; padding: 20px; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .valide { color: green; font-weight: bold; }
+        .erreur { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>📊 Rapport Automatisé Agify</h1>
+        <p>Statut Global : <span>{{ report.status }}</span></p>
+        <hr>
+        <p>Temps de réponse : <strong>{{ report.latency }}s</strong></p>
+        <p>Contrat de données : <strong>{{ report.contract }}</strong></p>
+        <p>Âge prédit pour Michael : <strong>{{ report.age_found }} ans</strong></p>
+    </div>
+    <p><a href="/">Retour aux consignes</a></p>
+</body>
+</html>
